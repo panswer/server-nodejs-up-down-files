@@ -11,8 +11,8 @@ const { VerificaCarpeta } = require('./helper/poblar');
 // Configuracion de servidor
 const app = express();
 
-app.use(express.urlencoded({ extended: true }));
 app.use(cors());
+app.use(express.urlencoded({ extended: true }));
 
 // Carpeta publica
 let public = path.resolve(__dirname, '../public');
