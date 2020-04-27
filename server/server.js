@@ -28,6 +28,11 @@ app.use(express.static(public));
 // Rutas
 app.use(require('./routes/index'));
 
+// Salvacion
+app.get('*', (req, res) => {
+    res.sendFile(`${public}/index.html`);
+});
+
 // Inicio de servidor
 app.listen(3000, err => {
     if (err) {
