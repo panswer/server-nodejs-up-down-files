@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subir archivo y ver en servidor</title>
+</head>
+
+<body>
+    <div class="container">
+        <form method="post">
+            <label for="archivo">archivo</label>
+            <input type="file" name="archivo" id="archivo">
+            <button class="boton" id="boton">Submit</button>
+        </form>
+        <div class="viewFile">
+            <a href="/file/view">Ver archivo</a>
+        </div>
+        <div class="downFile">
+            <a href="/file/download">Descargar</a>
+        </div>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./app/submit.js"></script>
+</body>
+
+</html>

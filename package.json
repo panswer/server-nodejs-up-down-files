@@ -1,0 +1,26 @@
+{
+    "name": "files",
+    "version": "1.0.0",
+    "description": "Pagina de subida y descarga de archivos",
+    "main": "index.js",
+    "scripts": {
+        "start": "node server/server",
+        "local": "nodemon server/server"
+    },
+    "keywords": [
+        "archivos",
+        "descarga",
+        "subida"
+    ],
+    "author": "Ricardo Mejias",
+    "license": "ISC",
+    "dependencies": {
+        "colors": "^1.4.0",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "express-fileupload": "^1.1.7-alpha.3"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.3"
+    }
+}
