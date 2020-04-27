@@ -5,6 +5,8 @@ const path = require('path');
 const fs = require('fs');
 const cors = require('cors');
 
+require('./config/config');
+
 // Helpers
 const { VerificaCarpeta } = require('./helper/poblar');
 
@@ -34,7 +36,7 @@ app.get('*', (req, res) => {
 });
 
 // Inicio de servidor
-app.listen(3000, err => {
+app.listen(process.env.PORT, err => {
     if (err) {
         console.log(`=>${"ERROR".red}: Server off<=`);
         console.log(err);
